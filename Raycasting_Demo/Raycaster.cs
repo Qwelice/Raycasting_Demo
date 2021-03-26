@@ -67,7 +67,8 @@ namespace Raycasting_Demo
                     // координата Х на плоскости камеры
                     double cameraX = 2 * i / (width * 1.0) - 1;
 
-                    // луч, которым мы будем проверять, есть ли впереди препятствие 
+                    /* направление луча, которым мы будем проверять, 
+                    есть ли впереди препятствие */
                     MyVector rayDir = new MyVector(playerDir.X + cameraPlane.X * cameraX,
                        playerDir.Y + cameraPlane.Y * cameraX);
                     
